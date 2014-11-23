@@ -1,0 +1,30 @@
+{
+    "name": "mascame/artificer-localization-plugin",
+    "description": "Localization plugin. Provides simple localization to notice users of a localizated field.",
+    "homepage": "https://github.com/marcmascarell/artificer-localization-plugin",
+    "keywords": [
+        "laravel",
+        "artificer",
+        "plugin",
+        "localization"
+    ],
+    "authors": [
+        {
+            "name": "Marc Mascarell",
+            "email": "marcmascarell@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/commands"
+        ],
+        "psr-0": {
+            "Mascame\\ArtificerLocalizationPlugin\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
