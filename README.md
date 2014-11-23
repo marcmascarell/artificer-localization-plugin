@@ -1,0 +1,2 @@
+artificer-localization-plugin
+=============================
