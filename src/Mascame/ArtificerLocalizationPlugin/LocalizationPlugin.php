@@ -8,6 +8,8 @@ use App;
 
 class LocalizationPlugin extends AbstractPlugin {
 
+    public static $assets_path = 'packages/mascame/artificer-localization-plugin/';
+
     /**
      * @var Localization;
      */
@@ -41,6 +43,7 @@ class LocalizationPlugin extends AbstractPlugin {
                 self::$localized_group = $group;
 
                 $field->title = self::$localized_group . ' ('.self::$localization->getLocaleNative($locale).')';
+                print '<span class="flag-icon flag-icon-gr"></span>';
             }
         });
 
@@ -49,6 +52,13 @@ class LocalizationPlugin extends AbstractPlugin {
 //
 //            }
 //        });
+
+        Event::listen(array('artificer.view.head.styles'), function () {
+            ?>
+            <link rel="stylesheet" href="<?php print asset(self::$assets_path . 'css/flag-icon.min.css') ?>">
+
+        <?php
+        });
 	}
 
     public static function isLocalized($name) {
@@ -66,5 +76,7 @@ class LocalizationPlugin extends AbstractPlugin {
 
         return false;
     }
+
+
 
 }
