@@ -43,7 +43,7 @@ class LocalizationPlugin extends AbstractPlugin {
                 self::$localized_group = $group;
 
                 $field->title = self::$localized_group . ' ('.self::$localization->getLocaleNative($locale).')';
-                print '<span class="flag-icon flag-icon-gr"></span>';
+//                print '<span class="flag-icon flag-icon-gr"></span>';
             }
         });
 
