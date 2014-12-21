@@ -13,14 +13,14 @@ Add the Service Provider to `app/config` at the bottom of Providers:
 
 ```php
 'Mascame\ArtificerLocalizationPlugin\ArtificerLocalizationPluginServiceProvider',
-
-// Dependency
-'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider'
 ```
+
+Add this dependency: [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
+
 Publish assets and config
 
 ```sh
 php artisan artificer-localization-plugin:publish
 ```
 
-Modify config to fill your needs
+Modify config to fill your needs.
