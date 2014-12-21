@@ -16,8 +16,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "4.2.*",
-        "mcamara/laravel-localization": "0.15.*"
+        "illuminate/support": "4.2.*"
     },
     "autoload": {
         "classmap": [

@@ -15,8 +15,6 @@ Add the Service Provider to `app/config` at the bottom of Providers:
 'Mascame\ArtificerLocalizationPlugin\ArtificerLocalizationPluginServiceProvider',
 ```
 
-Add this dependency: [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
-
 Publish assets and config
 
 ```sh
